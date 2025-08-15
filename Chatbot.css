@@ -1,0 +1,34 @@
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: white;
+  border-radius: 12px;
+}
+
+.chat-window {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.bot-message {
+  background-color: #e9ecef;
+  text-align: left;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+}

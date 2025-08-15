@@ -1,0 +1,106 @@
+/* App Container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  min-height: 100vh;
+  background-color: #1c1c1c !important;
+}
+
+.sidebar .nav-link.active {
+  background-color: #f0ad4e !important;
+  color: black !important;
+  border-radius: 8px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #343a40 !important;
+}
+
+.sidebar img {
+  border: 2px solid white;
+}
+
+.dropdown-menu {
+  background-color: #212529;
+}
+
+/* Content Section */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Post Card */
+.post-card {
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(197, 183, 183, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Post Title */
+.post-card .card-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+/* Hashtags / Tags */
+.hashtag {
+  margin-right: 6px;
+  font-size: 0.75rem;
+}
+
+/* Reaction and Comment section */
+.reactions, .comments {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+/* Delete button */
+.badge.bg-danger {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+ 
+  color: white;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+    text-align: center;
+  }
+
+  .sidebar .fs-4 {
+    font-size: 1rem;
+  }
+}
+
+/* Optional: Dark mode support */
+body.dark-mode .content {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .sidebar {
+  background-color: #000 !important;
+}
